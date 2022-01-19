@@ -18,7 +18,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <header class="w3-container w3-red w3-center" style="padding: 256px 32px">
   <h1 class="w3-margin w3-jumbo">CARBONIC</h1>
   <p class="w3-xlarge">CH₃-CH₃</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Enter</button>
+  <form>
+    <label for="compound" class="w3-xlarge w3-margin-top">Choose a carbon compound type:</label>
+    <select id="compound" name="compound">
+      <option value="alkane" selected>Alkane</option>
+      <option value="alkene">Alkene</option>
+      <option value="alkyne">Alkyne</option>
+    </select>
+    <br>
+    <label for="quantity" class="w3-xlarge w3-margin-top">Number of carbon atoms:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <br>
+    <label for="quantity" class="w3-xlarge w3-margin-top">Position of bond:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <br>
+    <input type="submit" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Enter">
+  </form>
 </header>
 
 <!-- Footer -->
