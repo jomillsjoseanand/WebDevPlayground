@@ -8,43 +8,64 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif
+  }
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding: 256px 32px">
-  <h1 class="w3-margin w3-jumbo">CARBONIC</h1>
-  <p class="w3-xlarge" section.portfolio-experiment
-    .experiment-title(contenteditable="true")>CH₃-CH₃</p>
-  <form>
-    <label for="compound" class="w3-xlarge w3-margin-top">Choose a carbon compound type:</label>
-    <select id="compound" name="compound">
+  .w3-bar,
+  h1,
+  button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
+</style>
+
+<body>
+  <!-- Header -->
+  <header class="w3-container w3-red w3-center" style="padding: 256px 32px">
+    <h1 class="w3-margin w3-jumbo">CARBONIC</h1>
+    <p class="w3-xlarge" section.portfolio-experiment .experiment-title(contenteditable="true" ) id="output">CH₃-CH₃</p>
+
+    <label for="compoundtype" class="w3-xlarge w3-margin-top">Choose a carbon compound type:</label>
+    <select id="compoundtype">
       <option value="alkane" selected>Alkane</option>
       <option value="alkene">Alkene</option>
       <option value="alkyne">Alkyne</option>
     </select>
     <br>
     <label for="quantity" class="w3-xlarge w3-margin-top">Number of carbon atoms:</label>
-    <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <input type="number" id="carbonquantity" min="1" max="10">
     <br>
     <label for="quantity" class="w3-xlarge w3-margin-top">Position of bond:</label>
-    <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <input type="number" id="carbonposition" min="1" max="10">
     <br>
-    <input type="submit" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Enter">
-  </form>
-</header>
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" id="button" type="button"
+      onclick="Carbonic()"> Enter </button>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <a href="https://www.instagram.com/jomillsjoseanand" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/jomillsjoseanand" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
- </div>
- <p>Made with &lt;3 by <a href="http://www.github.com/jomillsjoseanand" target="_blank">Jomills Jose Anand</a></p>
-</footer>
+  </header>
 
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+      <a href="https://www.instagram.com/jomillsjoseanand" target="_blank"><i
+          class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/jomillsjoseanand" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p>Made with &lt;3 by <a href="http://www.github.com/jomillsjoseanand" target="_blank">Jomills Jose Anand</a></p>
+  </footer>
+
+  <script src="carbonic.js" type="text/javascript"></script>
 </body>
+
 </html>
