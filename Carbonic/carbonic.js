@@ -6,36 +6,6 @@ const repeat = times => {
     return temp;
 }
 
-// const compound = {
-//     type: document.getElementById('compoundtype').options[document.getElementById('compoundtype').selectedIndex].value,
-//     tally: document.getElementById("carbonquantity").value,
-//     position: document.getElementById("carbonposition").v,
-//     display: () => {
-//         if (compound.position > Math.floor(compound.tally / 2)) {
-//             compound.position = compound.tally - compound.position;
-//         }
-//         switch (compound.type) {
-//             case 'Alkane':
-//                 output= 'CH₃-' + repeat(compound.tally - 2) + 'CH₃';
-//                 break;
-//             case 'Alkene':
-//                 if (compound.position === 1) {
-//                     output= 'CH₂=CH-' + repeat(compound.tally - 3) + 'CH₃';
-//                     break;
-//                 }
-//                 output= 'CH₃-' + repeat(compound.position - 2) + 'CH=CH-' + repeat(compound.tally - compound.position - 2) + 'CH₃';
-//                 break;
-//             case 'Alkyne':
-//                 if (compound.position === 1) {
-//                     output= 'CH≡C-' + repeat(compound.tally - 3) + 'CH₃';
-//                     break;
-//                 }
-//                 output= 'CH₃-' + repeat(compound.position - 2) + 'C≡C-' + repeat(compound.tally - compound.position - 2) + 'CH₃';
-//                 break;
-//         }
-//     }
-// }
-
 function compound(type, tally, position) {
     let output = "";
     if (position > Math.floor(tally / 2)) {
